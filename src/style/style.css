@@ -1,0 +1,156 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+header {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #EFEEF3;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #16133D;
+    margin: 0 auto;
+}
+
+.pseudo-title {
+    font-size: 16px;
+    line-height: 21px;
+    color: #7690A8;
+}
+
+h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 21px;
+    margin-bottom: 15px;
+}
+.text-holder {
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3DB370;
+    text-decoration: none;
+}
+
+.service {
+    padding: 100px 0;
+}
+
+.icon-holder {
+    border: 1px solid rgba(21, 101, 216, 10%);
+    border-radius: 16px;
+    width: 64px;
+    height: 64px;
+    padding-bottom: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding-top: 40px;
+}
+
+.col {
+    width: 370px;
+    height: 340px;
+    border: 1px solid #E5EAF4;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.footer {
+    background: #16133D;
+}
+
+.icon-list {
+    padding-top: 41px;
+    padding-left: 0;
+    padding-bottom: 40px;
+}
+
+.icon {
+    background-image: url("../icons/icons-sprite.svg");
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    transition: background-position ease-in-out 0.3s;
+}
+
+.icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 40px;
+}
+.icon.icon-inst {
+    background-position: -9px -7px;
+}
+
+.icon.icon-fb {
+    background-position: -42px -7px;
+}
+
+.icon.icon-git {
+    background-position: -82px -7px;
+}
+
+.icon.icon-dr {
+    background-position: -120px -7px;
+}
+
+.icon.icon-tw {
+    background-position: -162px -7px;
+}
+
+.icon.icon-inst:hover {
+    background-position: -9px -47px;
+}
+
+.icon.icon-fb:hover {
+    background-position: -42px -47px;
+}
+
+.icon.icon-git:hover {
+    background-position: -82px -47px;
+}
+
+.icon.icon-dr:hover {
+    background-position: -120px -47px;
+}
+
+.icon.icon-tw:hover {
+    background-position: -162px -47px;
+}
+
+.icon-holder:hover #green {
+    fill: #52C29D;
+}
+
+
