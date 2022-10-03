@@ -24,12 +24,16 @@ body {
 }
 
 .pseudo-title {
+    display: block;
     font-size: 16px;
     line-height: 21px;
     color: #7690A8;
+    padding-bottom: 15px;
+    margin: 0 0 15px;
 }
 
 h1 {
+    margin: 0 0 40px;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 40px;
     line-height: 52px;
@@ -66,6 +70,10 @@ h2 {
     width: 64px;
     height: 64px;
     padding-bottom: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-container {
@@ -75,12 +83,28 @@ h2 {
     padding-top: 40px;
 }
 
-.col {
-    width: 370px;
-    height: 340px;
+.article-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
     border: 1px solid #E5EAF4;
     border-radius: 8px;
     padding: 40px;
+    transition: border-color ease-in-out 0.3s;
+}
+
+.article-link:hover {
+    border-color: #3DB370;
+}
+
+.article-link:hover #green,
+.article-link:hover #green-ecommerce,
+.article-link:hover #green-app {
+    fill: #52C29D;
+}
+
+.article-link:hover .icon-holder{
+    border: 1px solid rgba(61, 179, 112, 10%);
 }
 
 .footer {
@@ -92,9 +116,14 @@ h2 {
     padding-left: 0;
     padding-bottom: 40px;
 }
-
+.icon-holder svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .icon {
-    background-image: url("../icons/icons-sprite.svg");
+    background-image: url("../icons/icons-sprite-transparent.svg");
     background-repeat: no-repeat;
     width: 38px;
     height: 38px;
@@ -108,13 +137,25 @@ h2 {
     list-style: none;
     padding-left: 0;
     padding-bottom: 40px;
+    margin: 0 -5px;
+}
+
+.icon-list li {
+    padding: 0 5px;
+}
+
+.icon-list a {
+    background: #EFEEF3;
+    border-radius: 5px;
+    display: inline-block;
+    overflow: hidden;
 }
 .icon.icon-inst {
-    background-position: -9px -7px;
+    background-position: -13px -7px;
 }
 
 .icon.icon-fb {
-    background-position: -42px -7px;
+    background-position: -46px -7px;
 }
 
 .icon.icon-git {
@@ -130,11 +171,11 @@ h2 {
 }
 
 .icon.icon-inst:hover {
-    background-position: -9px -47px;
+    background-position: -13px -47px;
 }
 
 .icon.icon-fb:hover {
-    background-position: -42px -47px;
+    background-position: -46px -47px;
 }
 
 .icon.icon-git:hover {
@@ -147,10 +188,6 @@ h2 {
 
 .icon.icon-tw:hover {
     background-position: -162px -47px;
-}
-
-.icon-holder:hover #green {
-    fill: #52C29D;
 }
 
 
